@@ -1,0 +1,52 @@
+تمام! لإنشاء صفحة *ASP* تحتوي على روابط لأزرار تواصل مثل:  
+- *تلغرام*  
+- *واتساب*  
+- *فيسبوك*  
+- *تيك توك*  
+- *صورة شعار أو ملف شخصي*
+
+إليك كود بسيط بـ *HTML + ASP (VBScript)* لعرض الصورة وروابط الأزرار:
+
+```asp
+<%@ Language="VBScript" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>روابط التواصل</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    img { width: 150px; height: auto; border-radius: 50%; }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>تابعنا على المنصات</h2>
+
+  <!-- صورة -->
+  <img src="your-image.jpg" alt="صورة شخصية"><br><br>
+
+  <!-- روابط -->
+  <a href="https://t.me/yourusername" class="btn">تلغرام</a>
+  <a href="https://wa.me/1234567890" class="btn">واتساب</a>
+  <a href="https://facebook.com/yourprofile" class="btn">فيسبوك</a>
+  <a href="https://tiktok.com/@yourusername" class="btn">تيك توك</a>
+
+</body>
+</html>
+```
+
+*ملاحظات مهمة:*
+- غيّر `"your-image.jpg"` إلى رابط أو اسم صورة موجودة داخل ملفات موقعك.
+- غيّر الروابط حسب حساباتك الحقيقية.
+
+هل ترغب أيضًا بإرسال البيانات من الزائر عبر النموذج أو مجرد روابط فقط؟
